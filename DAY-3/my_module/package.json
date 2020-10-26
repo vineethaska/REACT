@@ -1,0 +1,14 @@
+{
+  "name": "vineeth_modules_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "author": "vineethaska",
+  "license": "ISC",
+  "dependencies": {
+    "module": "^1.2.5"
+  }
+}
