@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Calculator</title>	 
+</head>
+<style type="text/css">
+</style>
+<body>
+	<form>
+		<br>
+		<br>
+		enter your first date:
+		 <input type="text" id="d1" oninput="newdate1(this.value)" placeholder="yyyy/mm/dd" value=""><br>
+		<br>
+		enter your second date: 
+		<input type="text" id="d2" oninput="newdate2(this.value)" placeholder="yyyy/mm/dd" value=""><br>
+		<br>
+		<p id="demo"></p>
+		<p id="demo1"></p>
+		<script type="text/javascript">
+			function newdate1(text){
+				var date1=new Date(document.getElementById('d1').value);
+				document.getElementById("demo").innerHTML ="first date = " + date1; 
+			}
+			function newdate2(text){
+				var date2=new Date(document.getElementById('d2').value);
+				document.getElementById("demo1").innerHTML = "second date = " + date2; 
+			}
+			function age(){
+				var da1 =document.getElementById('d1').value;
+				var da2=new Date(da1);
+				var da3 =document.getElementById('d2').value;
+				var da4=new Date(da3);
+				// var fdate = da1.toString();
+    //     		var yearThen = parseInt(fdate.substring(0,4), 10);
+    //     		var monthThen = parseInt(fdate.substring(5,7), 10);
+    //     		var dayThen = parseInt(fdate.substring(8,10), 10);
+    //     		var sdate = da2.toString();
+    //     		var yearThen1 = parseInt(sdate.substring(0,4), 10);
+    //     		var monthThen1 = parseInt(sdate.substring(5,7), 10);
+    //     		var dayThen1 = parseInt(sdate.substring(8,10), 10);
+    //     		var bir1= new Date(yearThen, monthThen-1, dayThen);
+    //     		var bir2= new Date(yearThen1, monthThen1-1, dayThen1);
+        		// var age1=da2.getFullYear()-da4.getFullYear();
+        		// let months =(age1 * 12) + (da2.getMonth() - da4.getMonth()) ;
+        		// document.getElementById("demo3").innerHTML = age1 + " " +"Years" + " " + months + "" + "Months"; 
+        		var age1=da2.valueOf()-da4.valueOf();
+        		var year_age = Math.floor(age1 / 31536000000);
+        		var day_age = Math.floor((year_age % 31536000000) / 86400000);
+        		var day_age1=day_age%30;
+        		var month_age = Math.floor(day_age/30);
+        		document.getElementById("demo3").innerHTML = year_age + " " +"Years" + " " + month_age + " " + "months" +
+        		" " + day_age1 + " " + " days";
+				}
+		</script>
+		<br>To calculate age click on the button below.<br>
+		<br>
+		<button type="button" onclick="age()">calculate age</button><br>
+		<br>
+		Age:<p id="demo3"></p><br>
+		<br>
+		
+		<br>
+	</form>
+
+</body>
+</html>
