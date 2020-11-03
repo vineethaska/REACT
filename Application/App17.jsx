@@ -42,11 +42,12 @@ class App17 extends React.Component {
       if (password.length < 6) {
         errors.push("Password should be at least 6 characters long");
       }
-      if (mobile.length === 0) {
-        errors.push("mobile cannot be empty");
-      }
+      
       if (email.length === 0) { 
         errors.push("email cannot be empty");
+      }
+      if (mobile.length === 0) {
+        errors.push("mobile cannot be empty");
       }
       
       return errors;
