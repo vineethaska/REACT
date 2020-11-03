@@ -2,22 +2,16 @@
 1A:  React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications
 
 2.What are the main features of react? 
-2A:  The important features of ReactJS are as following.
-JSX.
-Components.
-One-way Data Binding.
-Virtual DOM.
-Simplicity.
-Performance.
+2A:JSX, Components, One-way Data Binding, virtual DOM, Simplicity,Performance.
 
 3. What is JSX?
-3A:  JSX stands for JavaScript XML.JSX allows us to write HTML in React.JSX makes it easier to write and add HTML in React and it is a syntax extension to JavaScript.Using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
+3A:  JSX stands for JavaScript XML.JSX allows us to write HTML in React.JSX makes it easier to write and add HTML in React and it is a syntax extension to JavaScript.Using it with React to describe what the UI should look like.
 
 4. what is the difference between elements and components?
 4A. React Element - It is a simple object that describes a DOM node and its attributes or properties you can say. It is an immutable description object and you can not apply any methods on it. React Component - It is a function or class that accepts an input and returns a React element
 
 5.how to create a component in react?
-5A. Create a Class Component When creating a React component, the component's name must start with an upper case letter. The component has to include the extends React. Component statement, this statement creates an inheritance to React. Component, and gives your component access to React.
+5A. creating a React component, the component's name must start with an upper case letter. The component has to include the extends React. Component statement, this statement creates an inheritance to React. Component, and gives your component access to React.
 
 6. When to use a Class Component over a Function Component?
 6A.  component which doesn't have its own state or needs to access a lifecycle hook,use functional component as much as possible. For state management you can use class component.
@@ -29,8 +23,87 @@ Performance.
 8A:  React components has a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders.
 
 9. What is props?
-9A: React allows us to pass information to a Component using something called props (stands for properties). Props are basically kind of global variable or object. We will learn about these in details in this article. Passing and Accessing props. We can pass props to any component as we declare attributes for any HTML tag
+9A: React allows us to pass information to a Component using something called props (stands for properties). Props are basically kind of global variable or object.
 
 10.what is difference between state and props in react?
 10A. props are variables passed to it by its parent component. State on the other hand is still variables, but directly initialized and managed by the component.
  
+11.Why should we not update the state directly?
+
+11A. updating state directly leads to bugs
+
+12.What is the purpose of callback function as an argument of setState()?
+12A.
+They work by preventing lifecycle methods from firing when props and state have not changed
+
+13.What is the difference between HTML and React event handling?
+13A. 
+HTML defines events and executed by javascript whereas 
+React defines and handle events
+
+14.How to bind methods or event handlers in JSX callbacks?
+
+15.How to pass a parameter to an event handler or callback?
+15A. 
+ex:- onClick={this.handleClick.bind(this, id)
+
+16. What are synthetic events in React?
+16A. 
+A synthetic event is a cross-browser wrapper around the browser's native event. It has the same interface as the browser's native event, including stopPropagation() and preventDefault() , except the events work identically across all browsers
+
+17.What are inline conditional expressions?
+ 
+17A.  inline if (iif), or ternary if.
+
+18.What is "key" prop and what is the benefit of using it in arrays of elements?
+
+18A.To uniquely identify a record
+
+19.What is the use of refs?
+19A. 
+To access the DOM element
+
+
+20.How to create refs?
+
+20A. React.createRef()
+
+21.What are forward refs?
+21A. 
+Ref forwarding is a technique for automatically passing a ref through a component to one of its children
+
+22.Which is preferred option with in callback refs and findDOMNode()?
+
+22A.  It is preferred to use callback refs over findDOMNode()
+
+23.Why are String Refs legacy?
+23A. The docs call the old string API "legacy" to make it clearer that the callback-based API is the preferred approach, as is discussed in this commit and in this PR which are the ones that actually put those statements to the documentation in the first place.
+
+
+24.What is Virtual DOM?
+
+24A. Virtual representation of UI
+
+25.How Virtual DOM works?
+
+25A. In virtual DOM ,react render only the element to be changed
+
+26.What is the difference between Shadow DOM and Virtual DOM?
+
+26A.  Virtual DOM is creating a copy of the whole DOM object, and Shadow DOM creates small pieces of the DOM object 
+
+27.What is React Fiber?
+27A. 
+React Fiber is a set of internal algorithms for rendering graphics used by the JavaScript library React
+
+28.What is the main goal of React Fiber?
+28A.
+ Its main goal is to enable incremental rendering of the virtual DOM
+
+29.What are controlled components?
+
+29A. In a controlled component, form data is handled by a React component. 
+
+30.What are controlled components?
+
+30A. uncontrolled components, where form data is handled by the DOM itself.
