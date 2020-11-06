@@ -27,13 +27,24 @@
         "webpack-dev-server": "^3.1.4"
     },
     "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
         "chai": "^4.2.0",
         "cypress": "^4.4.0",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.5",
+        "eslint": "^7.12.1",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-react": "^7.21.3",
         "jest": "^26.6.2",
+        "jest-cli": "^26.6.3",
+        "loader": "^2.1.1",
         "mocha": "5.2.0",
         "mocha-simple-html-reporter": "^1.1.0",
         "mochawesome": "4.1.0",
         "mochawesome-merge": "2.0.1",
-        "mochawesome-report-generator": "4.0.1"
+        "mochawesome-report-generator": "4.0.1",
+        "react-test-renderer": "^17.0.1"
     }
 }
