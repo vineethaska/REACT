@@ -1,0 +1,2 @@
+2020-11-12 19:46:19.410 ERROR 9304 --- [http-nio-6060-exec-1] com.example.demo.Application             : This is error message
+2020-11-12 19:50:49.765 ERROR 9304 --- [http-nio-6060-exec-3] com.example.demo.Application             : This is error message
